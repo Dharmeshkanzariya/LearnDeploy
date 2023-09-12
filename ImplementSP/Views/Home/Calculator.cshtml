@@ -1,0 +1,51 @@
+﻿<h3>Calculator</h3>
+
+
+Enter First Number : <input type="number" id="num1">
+<br>
+<br>
+Enter Second Number : <input type="number" id="num2">
+<br>
+<br>
+
+<button onclick=Calculator('sum')>  Sum(+)</button>
+<button onclick=Calculator('Sub')>  Sub(-)</button>
+<button onclick=Calculator('mul')>  mul(*)</button>
+<button onclick=Calculator('div')>  div(/)</button>
+
+<div id="result">
+    <partial name="_Result"></partial>
+</div>
+
+<script>
+    function Calculator(act){
+        debugger;
+        var Act = act;
+        var Num1 = $('#num1').val();
+        var Num2 = $('#num2').val();
+
+        $.ajax({
+
+            url: "/Home/Calculator",
+            method: "POST",
+
+            data: {
+                "Act": Act,
+                    "Num1" : Num1,
+                    "Num2" : Num2
+
+            },
+            success: function (data) {
+
+                $('#result').html(data);
+
+            },
+            error: function (request, error) {
+
+                console.log(error);
+            }
+
+        })
+    }
+</script>
+

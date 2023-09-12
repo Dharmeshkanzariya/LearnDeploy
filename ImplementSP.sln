@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementSP", "ImplementSP\ImplementSP.csproj", "{18F9D0D1-989D-401D-8CD3-A03A45B71DD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18F9D0D1-989D-401D-8CD3-A03A45B71DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F9D0D1-989D-401D-8CD3-A03A45B71DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F9D0D1-989D-401D-8CD3-A03A45B71DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F9D0D1-989D-401D-8CD3-A03A45B71DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C359E3C-05C1-4152-A0CD-2B446AD720AA}
+	EndGlobalSection
+EndGlobal

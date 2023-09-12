@@ -1,0 +1,21 @@
+﻿@model ImplementSP.Models.Product
+<h3>Add Product</h3>
+
+<form action="AddProduct" method="post">
+        <!-- Product Name -->
+        <div>
+            <label for="productName">Product Name:</label>
+            <input type="text" asp-for="ProductName" id="productName" name="productName" required>
+        </div>
+
+        <!-- Price -->
+        <div>
+            <label for="price">Price:</label>
+            <input type="number" asp-for="Price" id="price" name="price" step="0.01" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
