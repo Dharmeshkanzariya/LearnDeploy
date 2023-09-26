@@ -17,7 +17,7 @@ variables:
 jobs:
 - job: BuildAndTest
   strategy:
-    maxParallel: 3  # Set the maximum number of parallel jobs to 3 (adjust as needed)
+    maxParallel: 1  # Set the maximum number of parallel jobs to 3 (adjust as needed)
   steps:
   - task: NuGetToolInstaller@1
 
